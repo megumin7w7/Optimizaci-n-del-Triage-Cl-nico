@@ -1,6 +1,6 @@
 <div align="center">
 
-# ⌬ Optimización del Triage Clínico
+# <span style="color:#7AA2F7;">⌬ Optimización del Triage Clínico</span>
 
 <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=26&pause=1000&color=7AA2F7&center=true&vCenter=true&width=900&lines=Machine+Learning+Aplicado+a+Salud;Feature+Engineering+Pipeline;Modelado+de+Riesgo+Clínico;Regresión+Logística+vs+XGBoost" />
 
@@ -9,7 +9,7 @@
 ![Python](https://img.shields.io/badge/Python-1A1B26?style=for-the-badge&logo=python&logoColor=7DCFFF)
 ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-24283B?style=for-the-badge&logo=scikitlearn&logoColor=BB9AF7)
 ![XGBoost](https://img.shields.io/badge/XGBoost-1F2335?style=for-the-badge&logoColor=73DACA)
-![Estado](https://img.shields.io/badge/Estado-Completado-24283B?style=for-the-badge&logoColor=7AA2F7)
+![Estado](https://img.shields.io/badge/Estado-Completado-24283B?style=for-the-badge&logoColor=F7768E)
 
 </div>
 
@@ -17,14 +17,19 @@
 
 <div align="center">
 
-## ACCESO RÁPIDO
+## <span style="color:#BB9AF7;">ACCESO RÁPIDO</span>
 
-<a href="#-descripción"><kbd> Descripción </kbd></a>
-<a href="#-dataset"><kbd> Dataset </kbd></a>
-<a href="#-metodología"><kbd> Metodología </kbd></a>
-<a href="#-modelos"><kbd> Modelos </kbd></a>
-<a href="#-hallazgos"><kbd> Hallazgos </kbd></a>
-<a href="#-stack"><kbd> Tecnologías </kbd></a>
+<a href="#-descripción"><kbd><span style="color:#7DCFFF;"> Descripción </span></kbd></a>
+
+<a href="#-dataset"><kbd><span style="color:#73DACA;"> Dataset </span></kbd></a>
+
+<a href="#-metodología"><kbd><span style="color:#BB9AF7;"> Metodología </span></kbd></a>
+
+<a href="#-modelos"><kbd><span style="color:#F7768E;"> Modelos </span></kbd></a>
+
+<a href="#-hallazgos"><kbd><span style="color:#9ECE6A;"> Hallazgos </span></kbd></a>
+
+<a href="#-stack"><kbd><span style="color:#E0AF68;"> Tecnologías </span></kbd></a>
 
 </div>
 
