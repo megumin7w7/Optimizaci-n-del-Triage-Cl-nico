@@ -2,14 +2,14 @@
 
 # ⌬ Optimización del Triage Clínico
 
-<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=26&pause=1000&color=00D9FF&center=true&vCenter=true&width=850&lines=Machine+Learning+Aplicado+a+Salud;Feature+Engineering+Pipeline;Modelado+de+Riesgo+Clínico;Regresión+Logística+vs+XGBoost" />
+<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=26&pause=1000&color=7AA2F7&center=true&vCenter=true&width=900&lines=Machine+Learning+Aplicado+a+Salud;Feature+Engineering+Pipeline;Modelado+de+Riesgo+Clínico;Regresión+Logística+vs+XGBoost" />
 
 <br>
 
-![Python](https://img.shields.io/badge/Python-0D1117?style=for-the-badge&logo=python&logoColor=00D9FF)
-![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-111827?style=for-the-badge&logo=scikitlearn&logoColor=7C3AED)
-![XGBoost](https://img.shields.io/badge/XGBoost-0F172A?style=for-the-badge&logoColor=22D3EE)
-![Estado](https://img.shields.io/badge/Estado-Completado-111827?style=for-the-badge&logoColor=00FFFF)
+![Python](https://img.shields.io/badge/Python-1A1B26?style=for-the-badge&logo=python&logoColor=7DCFFF)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-24283B?style=for-the-badge&logo=scikitlearn&logoColor=BB9AF7)
+![XGBoost](https://img.shields.io/badge/XGBoost-1F2335?style=for-the-badge&logoColor=73DACA)
+![Estado](https://img.shields.io/badge/Estado-Completado-24283B?style=for-the-badge&logoColor=7AA2F7)
 
 </div>
 
