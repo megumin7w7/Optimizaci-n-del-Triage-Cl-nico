@@ -2,7 +2,7 @@
 
 # 🏥 Optimización del Triage Clínico
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=28&pause=1000&color=4A90E2&center=true&vCenter=true&width=750&lines=Machine+Learning+Aplicado+a+Salud;Feature+Engineering;Predicción+Temprana+de+Diabetes;Python+y+Scikit-Learn" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=26&pause=1000&color=1B3A5C&center=true&vCenter=true&width=700&lines=Machine+Learning+Aplicado+a+Salud;Feature+Engineering;Predicción+de+Diabetes;Python+y+Scikit-Learn" />
 
 <br>
 
@@ -22,206 +22,99 @@
 <a href="#-descripción"><kbd> Descripción </kbd></a>
 <a href="#-dataset"><kbd> Dataset </kbd></a>
 <a href="#-metodología"><kbd> Metodología </kbd></a>
-<a href="#-hallazgos-clave"><kbd> Hallazgos Clave </kbd></a>
+<a href="#-hallazgos-clave"><kbd> Hallazgos </kbd></a>
 <a href="#-tecnologías"><kbd> Tecnologías </kbd></a>
-<a href="#-ejecución"><kbd> Ejecución </kbd></a>
 
 </div>
 
 ---
 
-# 📌 Descripción
+## 📌 Descripción
 
-Este repositorio contiene el desarrollo de un pipeline de clasificación para la detección temprana de diabetes mediante técnicas de **Machine Learning** e **Ingeniería de Variables (Feature Engineering)**.
+Este proyecto desarrolla un pipeline de Machine Learning para la detección temprana de diabetes utilizando técnicas de **Feature Engineering**, selección de variables y comparación de modelos predictivos.
 
-El proyecto compara modelos interpretables como **Regresión Logística** frente a modelos de ensamblaje más complejos como **Random Forest** y **XGBoost**, evaluando si la transformación inteligente de variables puede competir contra algoritmos más sofisticados.
+El objetivo principal fue evaluar si la creación de variables derivadas podía mejorar el rendimiento de modelos interpretables como la **Regresión Logística**, comparándolos frente a modelos más complejos como **Random Forest** y **XGBoost**.
 
-Además, se implementa un sistema robusto de validación utilizando métricas estadísticas y análisis comparativos de Odds Ratios para medir el impacto real del Feature Engineering sobre el poder predictivo del modelo.
+### Objetivos del proyecto
 
----
-
-## 🎯 Objetivos del Proyecto
-
-* Diseñar variables derivadas basadas en lógica clínica.
-* Aplicar técnicas de Feature Engineering para mejorar la predicción.
-* Comparar modelos lineales y modelos ensemble.
-* Interpretar variables mediante Odds Ratios y Feature Importance.
-* Analizar si la complejidad algorítmica realmente mejora el rendimiento clínico.
+- Crear variables derivadas con lógica clínica.
+- Comparar modelos de clasificación supervisada.
+- Analizar el impacto del Feature Engineering sobre los Odds Ratios.
+- Evaluar interpretabilidad vs complejidad del modelo.
 
 ---
 
-# 📂 Dataset
+## 📂 Dataset
 
 <div align="center">
-<img src="https://cdn-icons-png.flaticon.com/512/2966/2966487.png" width="120"/>
+<img src="https://cdn-icons-png.flaticon.com/512/2966/2966486.png" width="120"/>
 </div>
 
-* **Fuente de datos:** `Pima Indians Diabetes Database`
-* **Origen:** UCI Machine Learning Repository / Kaggle
-* **Población:** Mujeres de ascendencia Pima mayores de 21 años.
-* **Variable Objetivo:** `Outcome`
-  * `1` → Diabetes
-  * `0` → No Diabetes
+- **Dataset:** Pima Indians Diabetes Database
+- **Fuente:** UCI Machine Learning Repository / Kaggle
+- **Variable objetivo:** `Outcome` (Diabetes: Sí / No)
+
+### Variables derivadas creadas
+
+- `Ratio_Insulina_Glucosa`
+- `Ratio_IMC_Edad`
+- `IMC_Categoria`
+- `Presion_Sanguinea_div_Glucosa`
 
 ---
 
-## 📊 Variables Analizadas
+## ⚙️ Metodología
 
-### Variables Originales
-* `Glucosa`
-* `IMC`
-* `Edad`
-* `Insulina`
-* `Presion_Sanguinea`
-* `Embarazos`
-* `Funcion_Pedigree`
+El flujo del proyecto siguió las siguientes etapas:
 
-### Variables Generadas (Feature Engineering)
-* `Presion_Sanguinea_div_Glucosa`
-* `Ratio_Presion_IMC`
-* `IMC_Categoria_Obesidad`
-* `Edad_Categoria_Joven`
+### 1. Preprocesamiento
+- Imputación de valores fisiológicos inválidos.
+- Escalado de variables.
+- Tratamiento de outliers.
 
-Estas variables fueron creadas para representar relaciones fisiológicas y patrones clínicos no lineales.
+### 2. Feature Engineering
+- Creación de ratios clínicos.
+- Discretización de variables.
+- Variables de interacción.
 
----
+### 3. Selección de Variables
+- ANOVA F-Test
+- Lasso (L1)
+- Importancia por Random Forest
 
-# ⚙️ Metodología
+### 4. Modelado
+Modelos evaluados:
+- Regresión Logística
+- Random Forest
+- XGBoost
+- SVM
+- KNN
+- AdaBoost
 
-El flujo de trabajo sigue una estructura completa de Ciencia de Datos aplicada a salud:
-
----
-
-## 1️⃣ Preprocesamiento
-
-* Limpieza de datos
-* Imputación de valores fisiológicamente inválidos
-* Escalado mediante `StandardScaler`
-* Manejo de outliers
-
----
-
-## 2️⃣ Feature Engineering
-
-Se generaron nuevas variables derivadas para capturar relaciones clínicas complejas:
-
-* Ratios fisiológicos
-* Variables categóricas mediante binning
-* Relaciones entre IMC, presión y glucosa
+### 5. Validación
+- ROC-AUC
+- F1-Score
+- Bootstrap e Intervalos de Confianza
 
 ---
 
-## 3️⃣ Selección de Variables
+## 💡 Hallazgos Clave
 
-Se aplicaron técnicas híbridas de selección:
-
-* ANOVA F-Test
-* Random Forest Feature Importance
-* Lasso (L1 Regularization)
-
----
-
-## 4️⃣ Modelado
-
-Se entrenaron múltiples algoritmos:
-
-* Regresión Logística
-* Random Forest
-* XGBoost
-* Gradient Boosting
-* SVM
-* KNN
-* AdaBoost
+- **Glucosa** continúa siendo el predictor dominante del modelo.
+- El **Feature Engineering** mejoró variables relacionadas con IMC y presión sanguínea.
+- La **Regresión Logística optimizada** logró competir contra modelos más complejos manteniendo interpretabilidad.
+- Algunas variables creadas aportaron estabilidad al modelo, aunque no todas generaron mejoras significativas.
 
 ---
 
-## 5️⃣ Validación
+## ⚙️ Tecnologías
 
-Evaluación mediante:
-
-* ROC-AUC
-* Accuracy
-* F1-Score
-* Matriz de Confusión
-* Odds Ratios
-* Comparación Raw vs Feature Engineering
-
----
-
-# 💡 Hallazgos Clave y Conclusiones
-
-A través del análisis comparativo entre variables originales y variables creadas mediante Feature Engineering se obtuvieron los siguientes resultados:
+- Python
+- Pandas
+- NumPy
+- Scikit-Learn
+- XGBoost
+- Matplotlib
+- Seaborn
 
 ---
-
-## 🧠 Variables Dominantes
-
-Las variables clínicas originales continúan siendo los predictores más fuertes:
-
-* `Glucosa`
-* `IMC`
-* `Funcion_Pedigree`
-
-Especialmente `Glucosa`, que mostró el Odds Ratio más elevado del modelo.
-
----
-
-## ⚗️ Impacto del Feature Engineering
-
-El Feature Engineering sí aportó mejoras interpretables:
-
-* Algunas variables derivadas ingresaron al Top 10 del modelo.
-* Variables como `Presion_Sanguinea_div_Glucosa` mostraron capacidad predictiva adicional.
-* El rendimiento general mejoró moderadamente sin generar sobreajuste.
-
----
-
-## ⚖️ Interpretabilidad vs Complejidad
-
-Aunque modelos como Random Forest y XGBoost lograron resultados competitivos:
-
-* La Regresión Logística mantuvo alta interpretabilidad clínica.
-* El incremento de complejidad no siempre justificó la pérdida de transparencia.
-
----
-
-## 📈 Conclusión General
-
-El proyecto demuestra que:
-
-> Un buen Feature Engineering puede acercar modelos simples a rendimientos similares a modelos complejos, manteniendo interpretabilidad clínica y estabilidad estadística.
-
----
-
-# ⚙️ Tecnologías y Librerías
-
-El proyecto fue desarrollado en **Python 3.12** utilizando:
-
----
-
-## 🔹 Core
-* pandas
-* numpy
-
-## 🔹 Machine Learning
-* scikit-learn
-* xgboost
-
-## 🔹 Visualización
-* matplotlib
-* seaborn
-
-## 🔹 Ingeniería de Variables
-* feature-engine
-
-## 🔹 Validación Estadística
-* scipy
-
----
-
-# 🚀 Ejecución
-
-Para ejecutar el proyecto localmente:
-
-```bash
-git clone <repositorio>
