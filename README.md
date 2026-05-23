@@ -115,15 +115,7 @@ Main objectives:
 # Stack
 
 ```bash
-Python
-Pandas
-NumPy
-Scikit-Learn
-XGBoost
-Matplotlib
-Seaborn
 
-<div align="center">
 
 [ system stable ]
 [ feature engineering loaded ]
