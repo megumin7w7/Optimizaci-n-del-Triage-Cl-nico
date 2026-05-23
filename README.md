@@ -1,23 +1,15 @@
 <div align="center">
 
-# ⌬ Clinical Triage Optimization
+# ⌬ Optimización del Triage Clínico
 
-```text
-[ initializing pipeline... ]
-[ loading engineered features... ]
-[ preparing model arena... ]
-[ validating bootstrap confidence... ]
-[ system status: stable ]
-```
-
-<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=26&pause=1000&color=00D9FF&center=true&vCenter=true&width=850&lines=Machine+Learning+Applied+to+Healthcare;Feature+Engineering+Pipeline;Clinical+Risk+Modeling;Logistic+Regression+vs+XGBoost" />
+<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=26&pause=1000&color=00D9FF&center=true&vCenter=true&width=850&lines=Machine+Learning+Aplicado+a+Salud;Feature+Engineering+Pipeline;Modelado+de+Riesgo+Clínico;Regresión+Logística+vs+XGBoost" />
 
 <br>
 
 ![Python](https://img.shields.io/badge/Python-0D1117?style=for-the-badge&logo=python&logoColor=00D9FF)
 ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-111827?style=for-the-badge&logo=scikitlearn&logoColor=7C3AED)
 ![XGBoost](https://img.shields.io/badge/XGBoost-0F172A?style=for-the-badge&logoColor=22D3EE)
-![Status](https://img.shields.io/badge/System-Stable-111827?style=for-the-badge&logoColor=00FFFF)
+![Estado](https://img.shields.io/badge/Estado-Completado-111827?style=for-the-badge&logoColor=00FFFF)
 
 </div>
 
@@ -25,31 +17,31 @@
 
 <div align="center">
 
-## QUICK ACCESS
+## ACCESO RÁPIDO
 
-<a href="#-description"><kbd> Description </kbd></a>
+<a href="#-descripción"><kbd> Descripción </kbd></a>
 <a href="#-dataset"><kbd> Dataset </kbd></a>
-<a href="#-methodology"><kbd> Methodology </kbd></a>
-<a href="#-model-arena"><kbd> Model Arena </kbd></a>
-<a href="#-findings"><kbd> Findings </kbd></a>
-<a href="#-stack"><kbd> Stack </kbd></a>
+<a href="#-metodología"><kbd> Metodología </kbd></a>
+<a href="#-modelos"><kbd> Modelos </kbd></a>
+<a href="#-hallazgos"><kbd> Hallazgos </kbd></a>
+<a href="#-stack"><kbd> Tecnologías </kbd></a>
 
 </div>
 
 ---
 
-# ~/description
+# ~/descripción
 
-Machine Learning pipeline focused on early diabetes prediction using Feature Engineering and supervised classification models.
+Pipeline de Machine Learning enfocado en la detección temprana de diabetes utilizando técnicas de Feature Engineering y modelos de clasificación supervisada.
 
-The project evaluates whether engineered clinical variables can compete against complex ensemble architectures while preserving interpretability and model stability.
+El proyecto evalúa si variables clínicas derivadas pueden competir contra modelos complejos de ensamblaje manteniendo interpretabilidad y estabilidad.
 
-Main objectives:
+## Objetivos principales
 
-- Design clinically meaningful engineered variables
-- Compare interpretable and ensemble models
-- Evaluate Odds Ratio variation after Feature Engineering
-- Analyze interpretability vs predictive complexity
+- Diseñar variables derivadas con lógica clínica
+- Comparar modelos interpretables y modelos ensemble
+- Analizar el impacto del Feature Engineering sobre los Odds Ratios
+- Evaluar interpretabilidad vs complejidad predictiva
 
 ---
 
@@ -59,16 +51,16 @@ Main objectives:
 <img src="https://cdn-icons-png.flaticon.com/512/2966/2966486.png" width="110"/>
 </div>
 
-| Property | Value |
+| Propiedad | Valor |
 |---|---|
 | Dataset | Pima Indians Diabetes Database |
-| Source | UCI / Kaggle |
-| Task | Binary Classification |
-| Target Variable | `Outcome` |
+| Fuente | UCI / Kaggle |
+| Problema | Clasificación Binaria |
+| Variable Objetivo | `Outcome` |
 
 ---
 
-## Engineered Features
+## Variables Generadas
 
 ```bash
 > Ratio_Insulina_Glucosa
@@ -78,19 +70,19 @@ Main objectives:
 > Ratio_Presion_IMC
 ```
 
-These engineered variables were created to capture hidden physiological relationships and improve predictive representation.
+Estas variables fueron creadas para capturar relaciones fisiológicas ocultas y mejorar la representación predictiva del modelo.
 
 ---
 
-# ~/methodology
+# ~/metodología
 
 ## preprocessing
 
 ```yaml
-invalid_values: imputed
-outliers: treated
-scaling: StandardScaler
-missing_data: handled
+valores_invalidos: imputados
+outliers: tratados
+escalado: StandardScaler
+datos_faltantes: manejados
 ```
 
 ---
@@ -98,18 +90,18 @@ missing_data: handled
 ## feature_engineering
 
 ```yaml
-clinical_ratios: enabled
-interaction_features: enabled
-binning: enabled
-non_linear_patterns: captured
+ratios_clinicos: habilitado
+variables_interaccion: habilitado
+binning: habilitado
+patrones_no_lineales: capturados
 ```
 
 ---
 
-## feature_selection
+## selección_de_variables
 
 ```yaml
-methods:
+métodos:
   - ANOVA F-Test
   - Lasso (L1)
   - Random Forest Importance
@@ -117,10 +109,10 @@ methods:
 
 ---
 
-## validation
+## validación
 
 ```yaml
-metrics:
+métricas:
   - ROC-AUC
   - F1-Score
   - Accuracy
@@ -131,37 +123,37 @@ confidence_interval: 95%
 
 ---
 
-# ~/model_arena
+# ~/modelos
 
-| Model | Purpose |
+| Modelo | Objetivo |
 |---|---|
-| Logistic Regression | Clinical Interpretability |
-| Random Forest | Feature Importance |
-| XGBoost | Predictive Optimization |
-| SVM | Margin Optimization |
-| KNN | Local Similarity |
-| AdaBoost | Ensemble Benchmark |
+| Regresión Logística | Interpretabilidad Clínica |
+| Random Forest | Importancia de Variables |
+| XGBoost | Optimización Predictiva |
+| SVM | Optimización de Márgenes |
+| KNN | Similitud Local |
+| AdaBoost | Benchmark Ensemble |
 
 ---
 
-# ~/findings
+# ~/hallazgos
 
 ```yaml
-dominant_predictor: Glucosa
-feature_engineering: effective
-best_interpretable_model: Logistic Regression
-highest_predictive_model: XGBoost
-model_stability: high
-bootstrap_validation: completed
+predictor_dominante: Glucosa
+feature_engineering: efectivo
+mejor_modelo_interpretable: Regresión Logística
+mejor_modelo_predictivo: XGBoost
+estabilidad_modelo: alta
+validación_bootstrap: completada
 ```
 
-### Key Conclusions
+## Conclusiones Principales
 
-- `Glucosa` remained the strongest predictor across all experiments.
-- Feature Engineering improved several pressure and BMI-related relationships.
-- Logistic Regression achieved competitive performance while maintaining interpretability.
-- Some engineered variables improved stability more than raw predictive power.
-- Increasing model complexity did not always justify interpretability loss.
+- `Glucosa` se mantuvo como el predictor dominante en todos los experimentos.
+- El Feature Engineering mejoró relaciones asociadas al IMC y presión sanguínea.
+- La Regresión Logística logró competir contra modelos complejos manteniendo interpretabilidad.
+- Algunas variables derivadas aportaron más estabilidad que mejora predictiva bruta.
+- Mayor complejidad no siempre justificó la pérdida de interpretabilidad.
 
 ---
 
@@ -178,15 +170,3 @@ Seaborn
 Feature-Engine
 SciPy
 ```
-
----
-
-<div align="center">
-
-```text
-[ model arena completed ]
-[ feature engineering validated ]
-[ clinical pipeline terminated successfully ]
-```
-
-</div>
