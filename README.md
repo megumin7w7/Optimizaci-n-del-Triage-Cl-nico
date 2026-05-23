@@ -1,15 +1,15 @@
 <div align="center">
 
-# <span style="color:#7AA2F7;">⌬ Optimización del Triage Clínico</span>
+# <span style="color:#58A6FF;">⌬ Optimización del Triage Clínico</span>
 
-<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=26&pause=1000&color=7AA2F7&center=true&vCenter=true&width=900&lines=Machine+Learning+Aplicado+a+Salud;Feature+Engineering+Pipeline;Modelado+de+Riesgo+Clínico;Regresión+Logística+vs+XGBoost" />
+<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=28&pause=1000&color=58A6FF&center=true&vCenter=true&width=950&lines=Machine+Learning+Aplicado+a+Salud;Feature+Engineering+Pipeline;Modelado+de+Riesgo+Clínico;Regresión+Logística+vs+XGBoost" />
 
 <br>
 
-![Python](https://img.shields.io/badge/Python-1A1B26?style=for-the-badge&logo=python&logoColor=7DCFFF)
-![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-24283B?style=for-the-badge&logo=scikitlearn&logoColor=BB9AF7)
-![XGBoost](https://img.shields.io/badge/XGBoost-1F2335?style=for-the-badge&logoColor=73DACA)
-![Estado](https://img.shields.io/badge/Estado-Completado-24283B?style=for-the-badge&logoColor=F7768E)
+![Python](https://img.shields.io/badge/Python-0F172A?style=for-the-badge&logo=python&logoColor=38BDF8)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-111827?style=for-the-badge&logo=scikitlearn&logoColor=A855F7)
+![XGBoost](https://img.shields.io/badge/XGBoost-0B1120?style=for-the-badge&logoColor=2DD4BF)
+![Estado](https://img.shields.io/badge/Estado-Completado-111827?style=for-the-badge&logoColor=F43F5E)
 
 </div>
 
@@ -17,19 +17,43 @@
 
 <div align="center">
 
-## <span style="color:#BB9AF7;">ACCESO RÁPIDO</span>
+## <span style="color:#C084FC;">ACCESO RÁPIDO</span>
 
-<a href="#-descripción"><kbd><span style="color:#7DCFFF;"> Descripción </span></kbd></a>
+<a href="#-descripción">
+<kbd style="background-color:#0F172A;">
+<span style="color:#38BDF8;"> Descripción </span>
+</kbd>
+</a>
 
-<a href="#-dataset"><kbd><span style="color:#73DACA;"> Dataset </span></kbd></a>
+<a href="#-dataset">
+<kbd style="background-color:#111827;">
+<span style="color:#2DD4BF;"> Dataset </span>
+</kbd>
+</a>
 
-<a href="#-metodología"><kbd><span style="color:#BB9AF7;"> Metodología </span></kbd></a>
+<a href="#-metodología">
+<kbd style="background-color:#1E293B;">
+<span style="color:#A855F7;"> Metodología </span>
+</kbd>
+</a>
 
-<a href="#-modelos"><kbd><span style="color:#F7768E;"> Modelos </span></kbd></a>
+<a href="#-modelos">
+<kbd style="background-color:#0B1120;">
+<span style="color:#F43F5E;"> Modelos </span>
+</kbd>
+</a>
 
-<a href="#-hallazgos"><kbd><span style="color:#9ECE6A;"> Hallazgos </span></kbd></a>
+<a href="#-hallazgos">
+<kbd style="background-color:#111827;">
+<span style="color:#22C55E;"> Hallazgos </span>
+</kbd>
+</a>
 
-<a href="#-stack"><kbd><span style="color:#E0AF68;"> Tecnologías </span></kbd></a>
+<a href="#-stack">
+<kbd style="background-color:#0F172A;">
+<span style="color:#F59E0B;"> Tecnologías </span>
+</kbd>
+</a>
 
 </div>
 
